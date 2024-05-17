@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input {
+  border: 0;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: initial;
+  box-shadow: none;
+}
+
+h2 {
+  color: #f7cf00;
+}
+
+h3 {
+  color: #f7cf00;;
+}
+
+button {
+  background: #ffd100;
+  border: 1px solid #ffd100;
+  cursor: pointer;
+}
+button:hover {
+  background: #ffde80;
+  border: 1px solid #ffde80;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px; 
+}

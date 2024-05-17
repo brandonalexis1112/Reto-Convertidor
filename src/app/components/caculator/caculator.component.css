@@ -1,0 +1,109 @@
+.card {
+  display: flex;
+  justify-content: center;
+  background-color: #00964b;
+  padding: 29px;
+}
+.input {
+  display: flex;
+  height: 7vh;
+  max-width: 20vw;
+  padding: 0px 15px;
+}
+.br {
+  align-items: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(230, 233, 237);
+  border-radius: 15px;
+  box-shadow: rgba(0, 17, 51, 0.05) 0px 3px 15px;
+}
+
+.btn {
+  &.lg {
+    height: 7vh;
+    width: 17vw;
+    padding: 25px;
+  }
+  &.lt {
+    padding: 8px 18px 5px 190px;
+  }
+  .gray {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    color: #434a54;
+  }
+
+  .change {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+
+    svg {
+      width: 15px;
+    }
+  }
+}
+
+.br:focus-within {
+  border-color: #00964b;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fx {
+  display: flex;
+  align-items: center;
+  &.col {
+    flex-direction: column;
+  }
+  &.row {
+    flex-direction: row;
+  }
+}
+
+.calculadora {
+  padding: 3rem;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  animation: slide-in 1.5s forwards;
+  .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .sale,
+    .purchase {
+      display: flex;
+      &.p {
+        padding-left: 15px;
+        &.td-r {
+          color: rgb(255, 0, 0);
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.header {
+  &._tittle {
+    width: 18vw;
+  }
+}

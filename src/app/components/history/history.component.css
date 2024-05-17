@@ -1,0 +1,67 @@
+.card {
+  justify-content: center;
+  background-color: #ffdf39;
+
+  &.td-g {
+    padding: 29px;
+  }
+
+  &.td-m {
+    padding: 15px;
+  }
+}
+.fx {
+  display: flex;
+  align-items: center;
+  &.col {
+    flex-direction: column;
+  }
+  &.row {
+    flex-direction: row;
+  }
+}
+.history {
+  padding: 3rem;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f38b00;
+  color: #fff;
+}
+.n {
+  display: none;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  border-bottom: 1px solid #ddd;
+}
+.box-h {
+  padding: 15px;
+  background-color: #00964b;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  animation: slide-in 1.5s forwards;
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  svg{
+    width: 20px;
+  }
+  .logo-arrow{
+    padding-left: 15px;
+  }
